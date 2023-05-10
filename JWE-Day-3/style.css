@@ -1,0 +1,46 @@
+body 
+{
+	background-color:rgb(150, 146, 146);
+}
+
+.box-1 {
+    border-style: double;
+    border-color: white;
+    border-width: 5px;
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+
+}
+
+.head {
+    color: black;
+    padding-top: 10px;
+    padding-left: 13px;
+    margin-top: 0;
+}
+
+.flex {
+   display: grid;
+}
+
+.box {
+    padding: 200px 30px;
+    align-items: center;
+    justify-content: center ;
+    background-color:rgb(141, 167, 182);
+}
+
+.margin {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+}
+
+.h1 {
+    color: red;
+}
+
+.day {
+    color: rgb(7,7,109);
+}
