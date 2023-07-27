@@ -1,0 +1,11 @@
+body
+{
+    background-color: rgb(170, 211, 238);
+}
+
+.register{
+    margin: 2rem;
+}
+.submit{
+    padding-left: 8em;
+}
