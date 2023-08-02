@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <h1>Javascript Assigment day 6:</h1>
+    <script>
+           // Console.log all even numbers from 10 to 1000 using a loop: 
+        for (let i = 10; i <= 1000; i += 2) {
+        console.log(i);
+         }
+
+           //Create an array of your top 5 favorite movies/shows and perform actions on it:
+        const favoriteMoviesShows = ["Best Movie", "Second Favorite", "Third Favorite", "Fourth Favorite", "Fifth Favorite"];
+
+        console.log(favoriteMoviesShows[1]); // Log the second-most favorite movie/show
+        console.log(favoriteMoviesShows); // Console log the list of top 5 movies/shows
+
+            //Create an object and store info about your favorite celebrity
+        const favoriteCelebrity = {
+        name: "Favorite Celebrity Name",
+        age: 30 // Example age
+        };
+
+        console.log("Name:", favoriteCelebrity.name);
+        console.log("Age:", favoriteCelebrity.age);
+
+            //Create a function to add numbers from n to 100 using both regular and arrow functions:
+              // Normal function
+        function addNumbersFromNTo100(n) {
+        let sum = 0;
+        for (let i = n; i <= 100; i++) {
+        sum += i;
+        }
+        return sum;
+        }
+
+              // Arrow function
+        const addNumbersFromNTo100Arrow = n => {
+        let sum = 0;
+        for (let i = n; i <= 100; i++) {
+        sum += i;
+        }
+        return sum;
+        };
+
+        console.log(addNumbersFromNTo100(50)); // Example usage of normal function
+        console.log(addNumbersFromNTo100Arrow(30)); // Example usage of arrow function
+
+    </script>
+</body>
+</html>
+<!-- 1. Console.log all even numbers from 10 to 1000. You’re free to use any loop.
+2.  Create an array and put your top 5 favorite movies/shows into them, keeping Best first.
+    1. Log the second-most favorite movie/show.
+    2. Console log the list of these top 5 movies/shows
+3. Create an object and store info about your favorite celebrity
+    1. Console log their name, age
+4. Create a function that adds the numbers from n to 100. The value of n you’ll pass in parameters.
+    1. Try with the normal function and Arrow function. -->
+
