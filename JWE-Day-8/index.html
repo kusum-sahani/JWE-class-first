@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Addition</title>
+</head>
+<body>
+    <h1>Addition Calculator</h1>
+
+    <form>
+        <label for="firstNumber">First Number:</label>
+        <input type="number" id="firstNumber" name="firstNumber">
+        <br>
+        <br>
+
+        <label for="secondNumber">Second Number:</label>
+        <input type="number" id="secondNumber" name="secondNumber">
+        <br>
+        <br>
+
+        <button type="button" onclick="addNumbers()">Calculate</button>
+    </form>
+    <p id="result"></p>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- 1. Create a function that runs itself and prints “Hello World”.
+2. Create a form that has two input fields with labels “First Number” & “Second Number”. There is a button named “Calculate” that adds to numbers and shows the result on the website.
+    
+    Hints - 
+    
+    1. Create the UI for Input fields and Buttons first.
+    2. Setup an event handler for Click Event on Calculate button that runs when you click on the button(Very basic :p)
+    3. Capture two values of two input fields and add them when clicking on the Button.
+    4. There can be a separate function to add two numbers.
+    5. Get the result of sum from that function and show into UI.
+    6. To show into UI, you need a paragraph tag with text in it. and when result is available, you can show it into it with innerHTML text. -->
