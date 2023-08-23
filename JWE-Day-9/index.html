@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h1>Play with </h1>
+      <!-- 2. Create a UL element in UI and not put any list item into them.-->
+       <main>
+        <div>
+               <input
+                type="text" 
+                placeholder="Enter todo item"
+                id="todo-input"
+            />
+            <button id="todo-submit">Add Item</button>
+            <!--"todo-submit" is an Event-->
+          </div>
+          <!--3. Create a div using Javascript and put a P tag into it. Inside the p tag, you can put your name.-->
+        <div>
+            <!-- <p class="error" id="error">Something went wrong</p> -->
+              <ul id="todo-list">
+                <li>Item 1 </li>
+                <li>Item 2 </li>
+            </ul>
+        </div> 
+        <br>
+        <!--4.Create a form that has an input. Make the type of input as number.
+          1. When you click on a button it should get the input number and multiply by 5 and show in UI.-->
+      <h2>Number Multiplier</h2>
+        <form>
+          <label for="numberInput">Enter a number: </label>
+          <input type="number" id="numberInput" name="numberInput">
+          <button type="button" onclick="multiplyByFive()">MuntiplyBy<b>5</b></button>
+        </form>
+        <p id="multiplierResult">Result:</p> <!--To show in UI, you’ll need to create a dummy paragraph tag where you can insert text dynamically.-->
+    </main> 
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- 1. Create an array of your 5th-standard marks(Don’t worry, you can put the wrong numbers xD).
+    1. Run the below operations - 
+        1. Iterate over all items
+        2. Multiply all marks by 3 and console log
+        3. Get all marks that are greater than 70
+        4. Find the first mark that is greater than 90
+2. Create a UL element in UI and not put any list item into them.
+    1. Create a li item in Javascript and insert it into UL
+3. Create a div using Javascript and put a P tag into it. Inside the p tag, you can put your name.
+4. Create a form that has an input. Make the type of input as number.
+    1. When you click on a button it should get the input number and multiply by 5 and show in UI.
+    2. To show in UI, you’ll need to create a dummy paragraph tag where you can insert text dynamically. -->
+
+
+
+ 
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Number Multiplier</title>
+    <script>
+        function multiplyByFive() {
+            // Get the input value
+            var inputValue = parseFloat(document.getElementById("numberInput").value);
+
+            // Check if the input is a valid number
+            if (!isNaN(inputValue)) {
+                // Multiply by 5
+                var result = inputValue * 5;
+
+                // Update the paragraph with the result
+                document.getElementById("resultParagraph").innerHTML = "Result: " + result;
+            } else {
+                // Display an error message if the input is not a valid number
+                document.getElementById("resultParagraph").innerHTML = "Please enter a valid number.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Number Multiplier</h1>
+    <form>
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" name="numberInput">
+        <button type="button" onclick="multiplyByFive()">Multiply by 5</button>
+    </form>
+    <p id="resultParagraph"></p>
+</body>
+</html>  -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Number Multiplier</title>
+</head>
+<body>
+    <form id="numberForm">
+        <label for="inputNumber">Enter a number:</label>
+        <input type="number" id="inputNumber" />
+        <button type="button" id="multiplyButton">Multiply by 5</button>
+    </form>
+    <p id="resultText"></p>
+
+    <script>
+        const multiplyButton = document.getElementById("multiplyButton");
+        const inputNumber = document.getElementById("inputNumber");
+        const resultText = document.getElementById("resultText");
+
+        multiplyButton.addEventListener("click", function() {
+            const inputValue = parseFloat(inputNumber.value);
+            if (!isNaN(inputValue)) {
+                const result = inputValue * 5;
+                resultText.textContent = `Result: ${result}`;
+            } else {
+                resultText.textContent = "Please enter a valid number.";
+            }
+        });
+    </script>
+</body>
+</html> -->
+
